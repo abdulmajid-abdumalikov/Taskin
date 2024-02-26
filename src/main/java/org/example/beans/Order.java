@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Order {
     private Integer ID;
     private String comment; // for washing, packaging, transport;
-    private String receiver; // operator or delivery or worker
-    private Double discountPercent;
+    private Integer receiverID; // operator or delivery or worker
+    private Integer discountPercent;
     private Double priceCarpet;
     private Double bigBlanketPrice;
     private Double smallBlanketPrice;
