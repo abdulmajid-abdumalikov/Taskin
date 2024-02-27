@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Order {
     private Integer ID;
-    private String commentFromReceiver; // for washing, packaging, transport;
+    private Integer ClientID;
+    private String commentFromWriter; // for washing, packaging, transport;
     private String commentFromDeliver;
     private Integer OrderWriterID; // operator or delivery or worker
     private Integer OrderWroteTime;
@@ -13,13 +14,14 @@ public class Order {
     private String productReceivedTime;
     private String productDeliveredTime;
     private Integer discountPercent;
-    private Double priceCarpet;
+    private Double carpetPrice;
     private Double bigBlanketPrice;
     private Double smallBlanketPrice;
-    ArrayList<Carpet> carpets = new ArrayList<>();
-    ArrayList<BigBlanket> bigBlankets = new ArrayList<>();
-    ArrayList<BigBlanket> smallBlankets = new ArrayList<>();
+    Reject reject;
     private Boolean hasStain;
     private Boolean needDelivered;
+    private Boolean inStorage;
+    private Double totalPrice;
+    private String paymentType;
 
 }

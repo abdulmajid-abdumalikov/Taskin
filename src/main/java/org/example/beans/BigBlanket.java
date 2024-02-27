@@ -1,6 +1,7 @@
 package org.example.beans;
 
 public class BigBlanket {
+    private Integer orderID;
     private String status; // enum: washing, packaging, delivering...
     private Integer washerID;
     private Integer rewashedCount;

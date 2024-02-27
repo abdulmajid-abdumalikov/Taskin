@@ -12,6 +12,7 @@ public class Client {
     private String comment;
     private String recallTime;
     private String recallComment;
+    private Double loan;
 
 
 
